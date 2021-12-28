@@ -20,8 +20,10 @@ function cycleHome() {
 }
 
 function error() {
-    document.getElementById("rArrow").setAttribute("onclick", "cycleAbout()");
-    document.getElementById("lArrow").setAttribute("onclick", "error()");
+    document.getElementById("rArrow").setAttribute("onclick", "none()");
+    document.getElementById("lArrow").setAttribute("onclick", "none()");
+    document.getElementById("lArrow").className = "";
+    document.getElementById("rArrow").className = "";
     setTimeout(er1, 0);
     setTimeout(er2, 500);
     setTimeout(er3, 1000);
@@ -51,6 +53,14 @@ function error() {
     setTimeout(er27, 10000);
     setTimeout(er28, 11000);
     setTimeout(er29, 12000);
+    setTimeout(errorReset, 12000);
+}
+
+function errorReset() {
+    document.getElementById("rArrow").setAttribute("onclick", "cycleAbout()");
+    document.getElementById("lArrow").setAttribute("onclick", "error()");
+    document.getElementById("lArrow").className = "lArrow";
+    document.getElementById("rArrow").className = "rArrow";
 }
 
 function er1() {
@@ -218,3 +228,5 @@ function ho4() {
 function ho5() {
     document.getElementById("page").innerHTML = "Home";
 }
+
+function none() {}
