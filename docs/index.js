@@ -1,4 +1,5 @@
 function cycleAbout() {
+    document.getElementById("title").innerHTML = "About";
     setTimeout(ab1, 0);
     setTimeout(ab2, 100);
     setTimeout(ab3, 200);
@@ -17,6 +18,7 @@ function cycleHome() {
     setTimeout(ho5, 400);
     document.getElementById("rArrow").setAttribute("onclick", "cycleAbout()");
     document.getElementById("lArrow").setAttribute("onclick", "error()");
+    document.getElementById("title").innerHTML = "Home";
 }
 
 function error() {
@@ -37,6 +39,7 @@ function error() {
     setTimeout(er11, 4400);
     setTimeout(er12, 4500);
     setTimeout(er13, 4700);
+    setTimeout(ti1, 4700);
     setTimeout(er14, 5000);
     setTimeout(er15, 5500);
     setTimeout(er16, 6000);
@@ -51,6 +54,7 @@ function error() {
     setTimeout(er25, 7000);
     setTimeout(er26, 8000);
     setTimeout(er27, 10000);
+    setTimeout(noTitle, 10000);
     setTimeout(er28, 11000);
     setTimeout(er29, 12000);
     setTimeout(errorReset, 12000);
@@ -61,6 +65,11 @@ function errorReset() {
     document.getElementById("lArrow").setAttribute("onclick", "error()");
     document.getElementById("lArrow").className = "lArrow";
     document.getElementById("rArrow").className = "rArrow";
+    document.getElementById("title").innerHTML = "Home";
+}
+
+function ti1() {
+    document.getElementById("title").innerHTML = "-error-";
 }
 
 function er1() {
@@ -170,6 +179,10 @@ function er26() {
 
 function er27() {
     document.getElementById("page").innerHTML = "";
+}
+
+function noTitle() {
+    document.getElementById("title").innerHTML = "ㅤ";
 }
 
 function er28() {
