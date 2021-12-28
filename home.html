@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="home.css" />
+        <script src="home.js"></script>
+        <title>Home</title>
+        <style>
+            @font-face {
+                font-family: manrope1;
+                src: url(regular.otf);
+            }
+
+            @font-face {
+                font-family: manrope2;
+                src: url(bold.otf);
+            }
+
+            @font-face {
+                font-family: SCP;
+                src: url(SourceCodePro-ExtraLight.otf);
+            }
+
+            .title {
+                color: #eaf7cf;
+                font-family: manrope2;
+                align-items: center;
+                text-align: center;
+                height: 10rem;
+                /* text-decoration: underline; */
+                text-overflow: auto;
+                text-underline-offset: 1rem;
+                cursor: default;
+                user-select: none;
+                text-decoration-thickness: 1rem;
+                font-weight: normal;
+                z-index: 2;
+            }
+
+            .home {
+                font-size: 150px;
+                letter-spacing: 2rem;
+                margin-top: 0;
+            }
+
+            .home2 {
+                font-size: 150px;
+                margin-top: 0;
+                font-family: manrope1;
+            }
+
+            body {
+                opacity: 1;
+                background-image: radial-gradient(#ffffff 0.5px, #0d0a1f 0.5px);
+                background-size: 10px 10px;
+            }
+
+            .reboot0 {
+                display: none;
+            }
+
+            .reboot {
+                background: black;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                left: 0;
+            }
+
+            .lArrow {
+                z-index: 2;
+            }
+
+            .rArrow {
+                z-index: 2;
+            }
+
+            .rArrow .lArrow {
+                text-align: center;
+            }
+
+            .lArrow:hover {
+                color: #f49d37;
+            }
+
+            .rArrow:hover {
+                color: #f49d37;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="title">
+            <h1 class="home" id="home">
+                <span class="lArrow" id="lArrow" onclick="error()">&lt;</span
+                ><span id="page">Home</span
+                ><span class="rArrow" id="rArrow" onclick="cycleAbout()"
+                    >&gt;</span
+                >
+            </h1>
+        </div>
+        <div id="reboot" class="reboot0"></div>
+    </body>
+</html>
