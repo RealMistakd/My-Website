@@ -1,5 +1,6 @@
 function cycleAbout() {
     document.getElementById("title").innerHTML = "About";
+    document.getElementById("info").innerHTML = "Nothing to see here...";
     setTimeout(ab1, 0);
     setTimeout(ab2, 100);
     setTimeout(ab3, 200);
@@ -11,6 +12,8 @@ function cycleAbout() {
 }
 
 function cycleHome() {
+    document.getElementById("info").innerHTML =
+        "I'm too lazy to add any actual content to my website so for right now its just a few animations and an about page with nothing in it.";
     setTimeout(ho1, 0);
     setTimeout(ho2, 100);
     setTimeout(ho3, 200);
@@ -22,6 +25,7 @@ function cycleHome() {
 }
 
 function error() {
+    document.getElementById("info").innerHTML = "";
     document.getElementById("rArrow").setAttribute("onclick", "none()");
     document.getElementById("lArrow").setAttribute("onclick", "none()");
     document.getElementById("lArrow").className = "";
@@ -66,6 +70,8 @@ function errorReset() {
     document.getElementById("lArrow").className = "lArrow";
     document.getElementById("rArrow").className = "rArrow";
     document.getElementById("title").innerHTML = "Home";
+    document.getElementById("info").innerHTML =
+        "I'm too lazy to add any actual content to my website so for right now its just a few animations and an about page with nothing in it.";
 }
 
 function ti1() {
