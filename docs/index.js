@@ -1,3 +1,8 @@
+function papa() {
+    setTimeout(helloPapi, 500);
+    setTimeout(helloPapiOff, 1000);
+}
+
 function cycleAbout() {
     document.getElementById("title").innerHTML = "About";
     document.getElementById("info").innerHTML = "Nothing to see here...";
@@ -249,3 +254,11 @@ function ho5() {
 }
 
 function none() {}
+
+function helloPapi() {
+    document.getElementById("papa").innerHTML = "papa?";
+}
+
+function helloPapiOff() {
+    document.getElementById("papa").innerHTML = "";
+}
